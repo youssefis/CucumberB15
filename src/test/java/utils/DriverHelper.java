@@ -14,7 +14,7 @@ public class DriverHelper {
     private DriverHelper() {}
         // I make my constructor private because I do not want anyone to create an object
         // and manipulate my driver from this class
-        public static WebDriver getDrive(){
+        public static WebDriver getDriver(){
             if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null) {
                 String browser = "chrome";
 
